@@ -20,9 +20,9 @@ class Person
   end
 
   # Make :of_age method private
-  private :of_age
+  private :of_age?
 
-  def can_use_services
-    of_age? || @parent_permission ? true : false
+  def can_use_services?
+    of_age? || @parent_permission
   end
 end
