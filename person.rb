@@ -1,4 +1,6 @@
-class Person
+require './nameable'
+
+class Person < Nameable
   # Getter for id
   attr_reader :id
 
@@ -10,13 +12,12 @@ class Person
     @name = name
     @age = age
     @parent_permission = parent_permission
+    super()
   end
 
   # Return true if @age is greater or equal to 18 and false if not
   def of_age?
-    return true if @age >= 18
-
-    false
+    @age >= 18
   end
 
   # Make :of_age method private
@@ -24,5 +25,9 @@ class Person
 
   def can_use_services?
     of_age? || @parent_permission
+  end
+
+  def correct_name
+    @name
   end
 end
