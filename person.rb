@@ -2,7 +2,7 @@ require './nameable'
 
 class Person < Nameable
   # Getter for id
-  attr_reader :id
+  attr_reader :id, :rentals
 
   # Getter and Setter for name and age
   attr_accessor :name, :age
@@ -12,6 +12,7 @@ class Person < Nameable
     @name = name
     @age = age
     @parent_permission = parent_permission
+    @rentals = []
     super()
   end
 
@@ -29,5 +30,9 @@ class Person < Nameable
 
   def correct_name
     @name
+  end
+
+  def add_rental(book, date)
+    Rental.new(date, book, self)
   end
 end
