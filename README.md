@@ -87,7 +87,7 @@ Install this project using:
 
 To run the project, execute the following command:
 
-- `npm run start`
+- In the terminal run `ruby main.rb` file
 
 
 ### Run tests
@@ -151,7 +151,6 @@ Give a ⭐️ if you like this project!
 - Thanks to the Microverse team for the great curriculum.
 - Thanks to the Code Reviewer(s) for the insightful feedback.
 - A great thanks to My coding partner(s), morning session team, and standup team for their contributions.
-- [Nelson Sakwa](https://www.behance.net/sakwadesignstudio) the author of the original design [www.behance.net](https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs))
 
 ## 📝 License
 
