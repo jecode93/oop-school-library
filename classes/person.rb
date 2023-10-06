@@ -1,4 +1,4 @@
-require './nameable'
+require './classes/nameable'
 
 class Person < Nameable
   # Getter for id
