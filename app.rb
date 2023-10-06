@@ -1,7 +1,7 @@
-require './student'
-require './teacher'
-require './book'
-require './rental'
+require_relative 'classes/student'
+require_relative 'classes/teacher'
+require_relative 'classes/book'
+require_relative 'classes/rental'
 
 class App
   attr_accessor :books, :people, :rentals
@@ -56,7 +56,6 @@ class App
       puts "Error: option has an invalid value (#{parent_permission})"
       return
     end
-
     @people.push(student)
     puts 'Person created successfully'
   end
@@ -71,7 +70,6 @@ class App
 
     print 'Specialization: '
     specialization = gets.chomp.to_s
-
     teacher = Teacher.new(specialization, age, name)
     @people.push(teacher)
     puts 'Person created successfully'

@@ -1,4 +1,4 @@
-require './decorator'
+require './classes/decorator'
 
 class CapitalizeDecorator < Decorator
   def correct_name
