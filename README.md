@@ -121,6 +121,11 @@ You can deploy this project using:
 - Twitter: [@jecode93](https://twitter.com/jecode93)
 - LinkedIn: [jean-emmanuel-cadet](https://www.linkedin.com/in/jean-emmanuel-cadet/)
 
+👤 **Nelofar Zabi**
+
+- GitHub: [@githubhandle](https://github.com/Nelofarzabi)
+- Twitter: [@twitterhandle](https://twitter.com/NelofarZabi)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/nelofar-zabi-1a1066213).
 
 <!-- FUTURE FEATURES -->
 
