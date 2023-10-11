@@ -3,6 +3,7 @@ require './classes/teacher'
 require './classes/book'
 require './classes/rental'
 require './utils/list'
+require './utils/preserve'
 
 module Creations
   include List
@@ -39,7 +40,8 @@ module Creations
       puts "Error: option has an invalid value (#{parent_permission})"
       return
     end
-    @people.push(student)
+    @people << student
+    write_to_file(@people, './data/people.json')
     puts 'Person created successfully'
   end
 
@@ -54,7 +56,8 @@ module Creations
     print 'Specialization: '
     specialization = gets.chomp.to_s
     teacher = Teacher.new(specialization, age, name)
-    @people.push(teacher)
+    @people << teacher
+    write_to_file(@people, './data/people.json')
     puts 'Person created successfully'
   end
 
@@ -66,7 +69,8 @@ module Creations
     print 'Author: '
     author = gets.chomp.to_s
 
-    @books.push(Book.new(title, author))
+    @books << Book.new(title, author)
+    write_to_file(@books, './data/books.json')
     puts 'Book created successfully'
   end
 
@@ -90,7 +94,8 @@ module Creations
     person = @people[person_index]
     print 'Date: '
     date = gets.chomp.to_s
-    @rentals.push(Rental.new(date, book, person))
+    @rentals << Rental.new(date, book, person)
+    write_to_file(@rentals, './data/rentals.json')
     puts 'Rental created successfully'
   end
 end
