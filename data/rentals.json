@@ -1,0 +1,1 @@
+[{"_class":"Rental","object_id":60,"date":"2021/05/05","book":{"_class":"Book","object_id":100,"title":"Le berger","author":"Berge","rentals":[]},"person":{"_class":"Student","object_id":60,"id":87,"name":"Mille","age":10,"parent_permission":true,"rentals":[],"classroom":"Unknown"}}]
